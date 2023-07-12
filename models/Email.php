@@ -2,6 +2,8 @@
     class Email extends SistemiComunicazione{
        public $allegato;
        private $notifica_consegna;
+       public static $colore_led = "white";
+
 
        public function __construct(string $_mittente, string $_destinatario, string $_oggetto, string $_contenuto, bool $notifica_consegna){
             parent::__construct($_mittente, $_destinatario, $_oggetto, $_contenuto);
@@ -9,7 +11,7 @@
        }
 
        public function setAllegato($_allegato){
-        $this->alleggato = $_allegato;
+        $this->allegato = $_allegato;
        }
 
        public function getAllegato(){
@@ -17,7 +19,7 @@
        }
 
        public function setNotifica_Consegna($_notifica_consegna){
-        $this->alleggato = $_notifica_consegna;
+        $this->allegato = $_notifica_consegna;
        }
 
        public function getNotifica_Consegna(){

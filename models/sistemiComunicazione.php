@@ -4,6 +4,7 @@
         private $destinatario;
         private $oggetto;
         private $contenuto;
+        public static $suoneria = "DRIIIIIN";
 
         public function __construct(string $_mittente, string $_destinatario, string $_oggetto, string $_contenuto){
             $this->mittente = $_mittente;
